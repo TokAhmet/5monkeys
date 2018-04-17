@@ -2,9 +2,10 @@
   @include flex;
   justify-content: space-between;
   margin: 3rem 0 0;
+  position: relative;
   background-color: $secondary-color;
-  position: absolute;
-  bottom: 10;
+  bottom: 0;
+  left: 0;
   width: 80%;
 }
 

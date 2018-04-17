@@ -1,0 +1,10 @@
+.container {
+  @include flex;
+  flex-flow: row wrap;
+}
+
+.main-section {
+  @include flex;
+  flex-direction: column;
+  width: 30%;
+}

@@ -1,0 +1,54 @@
+@media screen and (max-width: $mobile) {
+  .header-accessories h3,
+  .main-footer,
+  .main-section,
+  .mobile-flex,
+  .user-text {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .user-items,
+  .user-list {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .item-price,
+  .pen-icon {
+    padding: auto;
+    margin: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .modal {
+    padding-top: 25px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: $laptop) {
+  .side-text,
+  .sidebar {
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .mobile-numbers,
+  .order-shop,
+  .user-items {
+    font-size: 14px;
+  }
+}

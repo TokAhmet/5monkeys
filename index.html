@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="script/script.js" defer></script>
+  <title>5Monkeys</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-accessories">
+      <i class="far fa-arrow-alt-circle-left icon"></i>
+      <h3>Tillbehör</h3>
+    </div>
+    <h1 class="headline">Kassa</h1>
+  </header>
+
+  <main class="container">
+    <section class="main-section">
+      <div class="user-interface">
+        <h3 class="user-headline">Kunduppgifter</h3>
+        <p class="user-text">Hämta dina adressuppgifter genom att fylla i ditt personnummer</p>
+        <div class="user-personal">
+          <p class="mobile-text">Personnummer:</p>
+          <div class="mobile-flex">
+            <h2 class="mobile-numbers">720324 - 1083</h2>
+          </div>
+        </div>
+        <h3 class="user-headline">Bo Göran</h3>
+        <p class="user-text adress-info">Rävgatan 1b</p>
+        <p class="user-text adress-info adress-padding">123 45 Boliden</p>
+      </div>
+      <div class="user-information">
+        <h3 class="user-headline">Kontaktuppgifter</h3>
+        <p class="user-text">fyll i ditt mobilnummer för att få ett SMS när din order är redo</p>
+        <div class="user-mobile">
+          <p class="mobile-text">Mobilnummer:</p>
+          <div class="mobile-flex">
+            <h2 class="mobile-numbers" id="phoneNumber">0701245678</h2>
+            <i class="fas fa-pencil-alt pen-icon" id="phoneIcon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="user-list">
+      <div class="user-items">
+        <div class="item-info">
+          <img src="img/bosch700.jpg" alt="boschmaskin">
+          <p><strong>Bosch</strong> <br>PST 700 E</p>
+        </div>
+        <div class="item-count">
+          <i class="fas fa-plus-circle item-icon" id="addFirstItem"></i>
+          <p id="firstItem">1st</p>
+          <i class="fas fa-minus-circle item-icon" id="removeFirstItem"></i>
+          <h3 id="firstItemPrice">599 kr</h3>
+        </div>
+      </div>
+      <div class="user-items">
+        <div class="item-info">
+          <img src="img/bosch10delar.jpg" alt="boschmaskin">
+          <p><strong>Bosch</strong> <br>10 delars sticksågblad trä/metall</p>
+        </div>
+        <div class="item-count">
+          <i class="fas fa-plus-circle item-icon" id="addSecondItem"></i>
+          <p id="secondItem">1st</p>
+          <i class="fas fa-minus-circle item-icon" id="removeSecondItem"></i>
+          <h3 id="secondItemPrice">139 kr</h3>
+        </div>
+      </div>
+      <div class="user-items order-item">
+        <div class="item-info">
+          <i class="fas fa-truck item-icon order-icon"></i>
+          <i class="far fa-check-circle item-icon" id="circleCheckImage"></i>
+          <p>Hevleverans</p>
+        </div>
+        <div class="item-count">
+          <h3 id="deliverPrice">79 kr</h3>
+        </div>
+      </div>
+      <div class="user-items">
+        <div class="item-info">
+          <i class="fas fa-warehouse item-icon order-icon"></i>
+          <i class="far fa-circle item-icon" id="circleImage"></i>
+          <p>Hämta i butik</p>
+        </div>
+      </div>
+      <div class="item-total-price">
+        <div class="item-price">
+          <h2>Att betala:</h2>
+          <p>varav moms:</p>
+        </div>
+        <div class="item-moms">
+          <h2 id="totalPrice"></h2>
+          <p id="momsPrice">204 kr</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="side-text">
+        <h3>Kassan</h3>
+        <p>Använd knappsatsen nedan för att mata in ditt personnummer respektive mobilnummer i formuläret till vänster. Välj sedan ditt önskade leveranssätt och klicka på "Beställ".</p>
+      </div>
+      <div class="side-calculator">
+        <div class="box">
+          <h3>1</h3>
+        </div>
+
+        <div class="box">
+          <h3>2</h3>
+        </div>
+
+        <div class="box">
+          <h3>3</h3>
+        </div>
+
+        <div class="box">
+          <h3>4</h3>
+        </div>
+
+        <div class="box">
+          <h3>5</h3>
+        </div>
+
+        <div class="box">
+          <h3>6</h3>
+        </div>
+
+        <div class="box">
+          <h3>7</h3>
+        </div>
+
+        <div class="box">
+          <h3>8</h3>
+        </div>
+
+        <div class="box">
+          <h3>9</h3>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-times calc-icon"></i>
+        </div>
+
+        <div class="box">
+          <h3>0</h3>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-check calc-icon"></i>
+        </div>
+      </div>
+      <div class="order-shop">
+        <h3>Beställ</h3>
+        <i class="fas fa-arrow-alt-circle-right footer-icon" id="order-shop"></i>
+      </div>
+    </aside>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>"Tack för beställningen"</p>
+        </div>
+      </div>
+    </div>
+    <div id="myModalPhone" class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <input type="tel" name="newPhoneNumber" placeholder="Write ur new number here" maxlength="10" id="newPhoneNumber">
+        </div>
+        <div class="modal-footer">
+          <button id="changeNumber">Change</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="continue-shop">
+      <i class="far fa-arrow-alt-circle-left footer-icon"></i>
+      <h3>Fortsätt handla</h3>
+    </div>
+  </footer>
+
+</body>
+
+</html>

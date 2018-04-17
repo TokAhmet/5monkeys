@@ -1,0 +1,23 @@
+.main-header {
+  @include flex;
+  width: 80%;
+  height: 10%;
+  color: $white-color;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+}
+
+.header-accessories {
+  @include flex;
+}
+
+.icon {
+  font-size: 3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.headline {
+  margin: auto;
+  font-size: 2.5rem;
+}

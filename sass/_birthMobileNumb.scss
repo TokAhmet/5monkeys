@@ -1,0 +1,32 @@
+.user-mobile {
+  background-color: rgb(223, 221, 226);
+  margin: 0;
+  @include flex;
+  flex-direction: column;
+}
+
+.mobile-flex {
+  @include flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 60px;
+}
+
+.mobile-numbers {
+  margin: 0;
+  letter-spacing: 2px;
+  text-decoration: underline dashed;
+}
+
+.mobile-text {
+  margin: 10px 2rem 0;
+  text-transform: uppercase;
+  color: rgb(104, 106, 102);
+}
+
+.pen-icon {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  float: right;
+  cursor: pointer;
+}

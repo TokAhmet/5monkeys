@@ -1,11 +1,13 @@
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_global.scss */
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 /* line 5, C:/Users/Ahmet/Documents/5monkeys/sass/_global.scss */
-body,
-html {
+
+body, html {
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
   position: relative;
@@ -37,27 +39,30 @@ html {
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_header.scss */
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   width: 80%;
   height: 10%;
   color: #fff;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 1rem 2rem;
 }
 
 /* line 10, C:/Users/Ahmet/Documents/5monkeys/sass/_header.scss */
+
 .header-accessories {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
 }
 
 /* line 14, C:/Users/Ahmet/Documents/5monkeys/sass/_header.scss */
+
 .icon {
   font-size: 3rem;
   padding: 0.5rem;
@@ -65,46 +70,57 @@ html {
 }
 
 /* line 20, C:/Users/Ahmet/Documents/5monkeys/sass/_header.scss */
+
 .headline {
   margin: auto;
   font-size: 2.5rem;
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_main.scss */
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
 /* line 6, C:/Users/Ahmet/Documents/5monkeys/sass/_main.scss */
+
 .main-section {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 30%;
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+
 .user-interface {
   background-color: #fff;
   margin: 0 1rem 0 2rem;
 }
 
 /* line 6, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+
 .user-information {
   background-color: #fff;
   margin: 0.5rem 1rem 0 2rem;
 }
 
 /* line 11, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+
 .user-personal {
   height: 100px;
   border: 2px solid #000;
+  -webkit-box-shadow: 0 0 25px 0 #999999;
   box-shadow: 0 0 25px 0 #999999;
   width: 100%;
   padding: 0.5rem 0 0;
@@ -112,6 +128,7 @@ html {
 }
 
 /* line 20, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+
 .user-headline {
   font-size: 1.4rem;
   margin: 1rem 0;
@@ -119,51 +136,62 @@ html {
 }
 
 /* line 26, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+
 .user-text {
   margin-right: 2rem;
   padding: 0 1.5rem;
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_adress.scss */
+
 .adress-info {
   margin: 0;
 }
 
 /* line 5, C:/Users/Ahmet/Documents/5monkeys/sass/_adress.scss */
+
 .adress-padding {
   padding-bottom: 1.5rem;
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_birthMobileNumb.scss */
+
 .user-mobile {
   background-color: #dfdde2;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 /* line 8, C:/Users/Ahmet/Documents/5monkeys/sass/_birthMobileNumb.scss */
+
 .mobile-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 2rem;
   height: 60px;
 }
 
 /* line 15, C:/Users/Ahmet/Documents/5monkeys/sass/_birthMobileNumb.scss */
+
 .mobile-numbers {
   margin: 0;
   letter-spacing: 2px;
+  -webkit-text-decoration: underline dashed;
   text-decoration: underline dashed;
 }
 
 /* line 21, C:/Users/Ahmet/Documents/5monkeys/sass/_birthMobileNumb.scss */
+
 .mobile-text {
   margin: 10px 2rem 0;
   text-transform: uppercase;
@@ -171,6 +199,7 @@ html {
 }
 
 /* line 27, C:/Users/Ahmet/Documents/5monkeys/sass/_birthMobileNumb.scss */
+
 .pen-icon {
   font-size: 1.3rem;
   margin: 0.5rem;
@@ -179,31 +208,37 @@ html {
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .user-list {
   width: 47%;
   max-height: 100%;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0.5rem 1.5rem;
 }
 
 /* line 10, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .user-items {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
   border-bottom: 3px dotted #686a66;
 }
 
 /* line 17, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .user-items img {
   height: 50px;
   width: 50px;
@@ -211,24 +246,29 @@ html {
 }
 
 /* line 24, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-info {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 /* line 29, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-count {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 /* line 34, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-icon {
   color: #fb6605;
   font-size: 1.5rem;
@@ -237,48 +277,62 @@ html {
 }
 
 /* line 41, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .order-item {
   margin-top: 7rem;
   border-top: 3px dotted #686a66;
 }
 
 /* line 46, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .order-icon {
   color: #686a66;
 }
 
 /* line 50, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-total-price {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
 /* line 55, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-total-price h2 {
   margin: 20px 0 0;
 }
 
 /* line 60, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-price {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 /* line 66, C:/Users/Ahmet/Documents/5monkeys/sass/_item.scss */
+
 .item-moms {
   margin: 0 3rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_sidebar.scss */
+
 .sidebar {
   height: 100%;
   width: 20%;
@@ -291,22 +345,28 @@ html {
 }
 
 /* line 12, C:/Users/Ahmet/Documents/5monkeys/sass/_sidebar.scss */
+
 .side-text {
   padding: 3rem 2rem 1rem;
   color: #fff;
 }
 
 /* line 17, C:/Users/Ahmet/Documents/5monkeys/sass/_sidebar.scss */
+
 .side-calculator {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
 /* line 22, C:/Users/Ahmet/Documents/5monkeys/sass/_sidebar.scss */
+
 .box {
+  -ms-flex-preferred-size: 26%;
   flex-basis: 26%;
   margin: 5px auto;
   text-align: center;
@@ -317,6 +377,7 @@ html {
 }
 
 /* line 31, C:/Users/Ahmet/Documents/5monkeys/sass/_sidebar.scss */
+
 .box h3 {
   font-size: 2rem;
   padding: 0;
@@ -324,12 +385,14 @@ html {
 }
 
 /* line 38, C:/Users/Ahmet/Documents/5monkeys/sass/_sidebar.scss */
+
 .calc-icon {
   font-size: 2rem;
   margin: 1rem auto;
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal {
   display: none;
   /* Hidden by default */
@@ -354,6 +417,7 @@ html {
 }
 
 /* line 24, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-content {
   position: relative;
   background-color: #fb6605;
@@ -369,12 +433,14 @@ html {
 }
 
 /* line 38, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-body {
   padding: 2px 16px;
   text-align: center;
 }
 
 /* line 42, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-body input {
   padding: 1rem;
   margin: 1rem;
@@ -382,6 +448,7 @@ html {
 }
 
 /* line 49, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-footer {
   padding: 2px 16px;
   color: white;
@@ -389,6 +456,7 @@ html {
 }
 
 /* line 54, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-footer button {
   float: right;
   -webkit-box-shadow: 0 3px #666;
@@ -402,11 +470,13 @@ html {
 }
 
 /* line 65, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-footer button:hover {
   cursor: pointer;
 }
 
 /* line 69, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+
 .modal-footer button:active {
   -webkit-box-shadow: 0 2px #666;
   box-shadow: 0 2px #666;
@@ -416,11 +486,13 @@ html {
 }
 
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
+
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 3rem 0 0;
   background-color: #be5109;
@@ -429,11 +501,10 @@ html {
 }
 
 /* line 10, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
-.continue-shop,
-.order-shop {
+
+.continue-shop, .order-shop {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   margin: 0 2rem;
   font-size: 1.5rem;
@@ -441,23 +512,27 @@ html {
 }
 
 /* line 17, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
-.continue-shop h3,
-.order-shop h3 {
+
+.continue-shop h3, .order-shop h3 {
   margin: 1rem;
 }
 
 /* line 22, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
+
 .order-shop {
   background-color: #78380e;
   text-transform: uppercase;
   margin: 0;
   position: absolute;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   bottom: 0;
 }
 
 /* line 32, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
+
 .footer-icon {
   font-size: 3rem;
   padding: 0.8rem;
@@ -466,26 +541,20 @@ html {
 
 @media screen and (max-width: 800px) {
   /* line 2, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
-  .header-accessories h3,
-  .main-footer,
-  .main-section,
-  .mobile-flex,
-  .user-text {
+  .header-accessories h3, .main-footer, .main-section, .mobile-flex, .user-text {
     display: block;
     width: 100%;
     font-size: 12px;
   }
   /* line 12, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
-  .user-items,
-  .user-list {
+  .user-items, .user-list {
     display: block;
     margin: 1rem auto;
     width: 90%;
     font-size: 1rem;
   }
   /* line 20, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
-  .item-price,
-  .pen-icon {
+  .item-price, .pen-icon {
     padding: auto;
     margin: auto;
   }
@@ -509,17 +578,12 @@ html {
 
 @media screen and (max-width: 1024px) {
   /* line 43, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
-  .side-text,
-  .sidebar {
+  .side-text, .sidebar {
     padding: 8px;
     font-size: 1rem;
   }
   /* line 49, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
-  .mobile-numbers,
-  .order-shop,
-  .user-items {
+  .mobile-numbers, .order-shop, .user-items {
     font-size: 14px;
   }
 }
-
-/*# sourceMappingURL=../css/style.map */

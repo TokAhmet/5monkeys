@@ -102,21 +102,22 @@ html {
 /* line 11, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
 .user-personal {
   height: 100px;
-  border: 2px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   box-shadow: 0 0 25px 0 #999999;
   width: 100%;
   padding: 0.5rem 0 0;
   z-index: 1000;
 }
 
-/* line 20, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+/* line 21, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
 .user-headline {
   font-size: 1.4rem;
   margin: 1rem 0;
   padding: 0 1.5rem;
 }
 
-/* line 26, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
+/* line 27, C:/Users/Ahmet/Documents/5monkeys/sass/_userinfo.scss */
 .user-text {
   margin-right: 2rem;
   padding: 0 1.5rem;
@@ -230,7 +231,7 @@ html {
 .item-icon {
   color: #fb6605;
   font-size: 1.5rem;
-  margin: 1.5rem;
+  margin: 0.8rem;
   cursor: pointer;
 }
 
@@ -455,13 +456,13 @@ html {
   width: 100%;
   bottom: 0;
   left: 0;
+  cursor: pointer;
 }
 
-/* line 35, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
+/* line 36, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
 .footer-icon {
   font-size: 3rem;
   padding: 0.8rem;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -504,30 +505,42 @@ html {
   }
   /* line 39, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .sidebar {
-    display: none;
+    display: block;
+    position: static;
+    width: 100%;
+    margin: 1rem;
   }
-  /* line 43, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 46, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  .side-calculator {
+    margin-bottom: 1rem;
+  }
+  /* line 50, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  .order-shop {
+    display: flex;
+    position: static;
+  }
+  /* line 55, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   h3 {
     font-size: 20px;
   }
-  /* line 47, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 59, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .modal {
     padding-top: 25px;
   }
-  /* line 51, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 63, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .modal-content {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 56, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 68, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .side-text,
   .sidebar {
     padding: 8px;
     font-size: 1rem;
   }
-  /* line 62, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 74, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .mobile-numbers,
   .order-shop,
   .user-items {
@@ -536,7 +549,7 @@ html {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 69, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 81, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .main-footer {
     display: -webkit-box;
     display: -ms-flexbox;

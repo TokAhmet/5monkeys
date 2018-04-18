@@ -22,10 +22,10 @@ let myModalPhone = document.getElementById('myModalPhone');
 
 orderButton.addEventListener('click', function(e) {
   modal.style.display = "block";
-
-  function closeModal() {
-    modal.style.display = "none";
-  }
+  setTimeout(function() {
+    modal.remove();
+    location.reload();
+  }, 2150);
 
   window.onclick = function(event) {
     if (event.target == modal) {
@@ -67,7 +67,6 @@ addFirstItem.addEventListener('click', function(e) {
   firstValue++;
   firstPrice += 599;
   firstItem.innerHTML = firstValue + "st";
-  firstItemPrice.innerHTML = firstPrice + " kr";
   totalPrice.innerHTML = firstPrice + secondPrice + deliverPrice + " kr";
   momsPrice.innerHTML = Math.floor((firstPrice + secondPrice + deliverPrice) / 4) + " kr";
 });
@@ -76,7 +75,6 @@ addSecondItem.addEventListener('click', function(e) {
   secondValue++;
   secondPrice += 139;
   secondItem.innerHTML = secondValue + "st";
-  secondItemPrice.innerHTML = secondPrice + " kr";
   totalPrice.innerHTML = firstPrice + secondPrice + deliverPrice + " kr";
   momsPrice.innerHTML = Math.floor((firstPrice + secondPrice + deliverPrice) / 4) + " kr";
 });
@@ -88,10 +86,8 @@ removeFirstItem.addEventListener('click', function(e) {
     firstValue = 0;
     firstPrice = 0;
     firstItem.innerHTML = firstValue + "st";
-    firstItemPrice.innerHTML = firstPrice + " kr";
   }
   firstItem.innerHTML = firstValue + "st";
-  firstItemPrice.innerHTML = firstPrice + " kr";
   totalPrice.innerHTML = firstPrice + secondPrice + deliverPrice + " kr";
   momsPrice.innerHTML = Math.floor((firstPrice + secondPrice + deliverPrice) / 4) + " kr";
 });
@@ -103,10 +99,8 @@ removeSecondItem.addEventListener('click', function(e) {
     secondValue = 0;
     secondPrice = 0;
     secondItem.innerHTML = secondValue + "st";
-    secondItemPrice.innerHTML = secondPrice + " kr";
   }
   secondItem.innerHTML = secondValue + "st";
-  secondItemPrice.innerHTML = secondPrice + " kr";
   totalPrice.innerHTML = firstPrice + secondPrice + deliverPrice + " kr";
   momsPrice.innerHTML = Math.floor((firstPrice + secondPrice + deliverPrice) / 4) + " kr";
 });

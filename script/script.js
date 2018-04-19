@@ -32,6 +32,7 @@ let circleCheckImage = document.getElementById('circleCheckImage');
 
 let modal = document.getElementById('myModal');
 let myModalPhone = document.getElementById('myModalPhone');
+let modalSpan = document.getElementById('modal-span');
 
 orderButton.addEventListener('click', function(e) {
   modal.style.display = "block";
@@ -52,16 +53,16 @@ orderButton.addEventListener('click', function(e) {
 phoneIcon.addEventListener('click', function(e) {
   myModalPhone.style.display = "block";
 
-  function closeModal() {
-    myModalPhone.style.display = "none";
-  }
-
   window.onclick = function(event) {
     if (event.target == myModalPhone) {
       myModalPhone.style.display = "none";
       let newPhoneNumber = document.getElementById('newPhoneNumber').value = "";
     }
   }
+});
+
+modalSpan.addEventListener('click', function(e) {
+  myModalPhone.style.display = "none";
 });
 
 let arrayDate = [];

@@ -413,6 +413,18 @@ html {
   transform: translateY(2px);
 }
 
+/* line 79, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+#modal-span {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* line 84, C:/Users/Ahmet/Documents/5monkeys/sass/_modal.scss */
+#modal-span:focus, #modal-span:hover {
+  cursor: pointer;
+}
+
 /* line 1, C:/Users/Ahmet/Documents/5monkeys/sass/_footer.scss */
 .main-footer {
   display: -webkit-box;

@@ -75,3 +75,14 @@
     }
   }
 }
+
+#modal-span {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}

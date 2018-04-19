@@ -3,6 +3,7 @@ let phoneIcon = document.getElementById('phoneIcon');
 let changeNumber = document.getElementById('changeNumber');
 
 let birthDate = document.getElementById("birthDate");
+let removeBirthNumber = document.getElementById('removeBirthNumber');
 let nmbr1 = document.getElementById('box1');
 let nmbr2 = document.getElementById('box2');
 let nmbr3 = document.getElementById('box3');
@@ -178,6 +179,15 @@ nmbr0.addEventListener("click", function(e) {
   if (arrayDate.length == 6) {
     arrayDate.push(" - ");
   }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+removeBirthNumber.addEventListener("click", function(e) {
+  arrayDate.splice(-1, 1);
+  birthDate.innerHTML = arrayDate.join("");
   if (arrayDate.length > 10) {
     arrayDate = [];
   }

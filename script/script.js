@@ -2,6 +2,18 @@ let orderButton = document.getElementById('order-shop');
 let phoneIcon = document.getElementById('phoneIcon');
 let changeNumber = document.getElementById('changeNumber');
 
+let birthDate = document.getElementById("birthDate");
+let nmbr1 = document.getElementById('box1');
+let nmbr2 = document.getElementById('box2');
+let nmbr3 = document.getElementById('box3');
+let nmbr4 = document.getElementById('box4');
+let nmbr5 = document.getElementById('box5');
+let nmbr6 = document.getElementById('box6');
+let nmbr7 = document.getElementById('box7');
+let nmbr8 = document.getElementById('box8');
+let nmbr9 = document.getElementById('box9');
+let nmbr0 = document.getElementById('box0');
+
 let addFirstItem = document.getElementById('addFirstItem');
 let addSecondItem = document.getElementById('addSecondItem');
 let removeFirstItem = document.getElementById('removeFirstItem');
@@ -49,6 +61,127 @@ phoneIcon.addEventListener('click', function(e) {
       let newPhoneNumber = document.getElementById('newPhoneNumber').value = "";
     }
   }
+});
+
+let arrayDate = [];
+
+nmbr1.addEventListener("click", function(e) {
+  arrayDate.push("1");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr2.addEventListener("click", function(e) {
+  arrayDate.push("2");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr3.addEventListener("click", function(e) {
+  arrayDate.push("3");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr4.addEventListener("click", function(e) {
+  arrayDate.push("4");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr5.addEventListener("click", function(e) {
+  arrayDate.push("5");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr6.addEventListener("click", function(e) {
+  arrayDate.push("6");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr7.addEventListener("click", function(e) {
+  arrayDate.push("7");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr8.addEventListener("click", function(e) {
+  arrayDate.push("8");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
+});
+
+nmbr9.addEventListener("click", function(e) {
+  arrayDate.push("9");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+});
+
+nmbr0.addEventListener("click", function(e) {
+  arrayDate.push("0");
+  birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
+  if (arrayDate.length > 10) {
+    arrayDate = [];
+  }
+
 });
 
 changeNumber.addEventListener('click', function(e) {

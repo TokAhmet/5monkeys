@@ -500,59 +500,60 @@ html {
   /* line 21, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .order-item {
     display: flex;
+    border-top: none;
   }
-  /* line 25, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 26, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .item-icon {
     margin: 12px;
   }
-  /* line 29, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 30, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .main-footer {
     margin: auto;
   }
-  /* line 33, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 34, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .item-price,
   .pen-icon {
     padding: auto;
     margin: auto;
   }
-  /* line 39, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 40, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .sidebar {
     display: block;
     position: static;
     width: 100%;
     margin: 1rem;
   }
-  /* line 46, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 47, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .side-calculator {
     margin-bottom: 1rem;
   }
-  /* line 50, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 51, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .order-shop {
     display: flex;
     position: static;
   }
-  /* line 55, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 56, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   h3 {
     font-size: 20px;
   }
-  /* line 59, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 60, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .modal {
     padding-top: 25px;
   }
-  /* line 63, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 64, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .modal-content {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 68, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 69, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .side-text,
   .sidebar {
     padding: 8px;
     font-size: 1rem;
   }
-  /* line 74, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 75, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .mobile-numbers,
   .order-shop,
   .user-items {
@@ -561,7 +562,7 @@ html {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 81, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
+  /* line 82, C:/Users/Ahmet/Documents/5monkeys/sass/_media.scss */
   .main-footer {
     display: -webkit-box;
     display: -ms-flexbox;

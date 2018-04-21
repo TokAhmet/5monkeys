@@ -1,4 +1,5 @@
 let orderButton = document.getElementById('order-shop');
+
 let phoneIcon = document.getElementById('phoneIcon');
 let changeNumber = document.getElementById('changeNumber');
 
@@ -35,6 +36,14 @@ let modal = document.getElementById('myModal');
 let myModalPhone = document.getElementById('myModalPhone');
 let modalSpan = document.getElementById('modal-span');
 
+let arrayDate = [];
+
+let firstValue = 1;
+let firstPrice = 599;
+let secondValue = 1;
+let secondPrice = 139;
+let deliverPrice = 79;
+
 orderButton.addEventListener('click', function(e) {
   modal.style.display = "block";
   setTimeout(function() {
@@ -67,7 +76,22 @@ modalSpan.addEventListener('click', function(e) {
   let newPhoneNumber = document.getElementById('newPhoneNumber').value = "";
 });
 
-let arrayDate = [];
+changeNumber.addEventListener('click', function(e) {
+  let newPhoneNumber = document.getElementById('newPhoneNumber').value;
+  let phoneNumber = document.getElementById('phoneNumber');
+  if (newPhoneNumber.match(/^[0-9]+$/) != null) {
+    phoneNumber.innerHTML = newPhoneNumber;
+  } else {
+    alert('det får bara innehålla nummer värden');
+  }
+  if (newPhoneNumber.length < 10 && newPhoneNumber.match(/^[0-9]+$/) != null) {
+    alert('vänligen skriv in ett 10 siffrigt telefonnummer');
+  }
+  if (newPhoneNumber.match(/^[0-9]+$/) != null && newPhoneNumber.length == 10) {
+    let newPhoneNumber = document.getElementById('newPhoneNumber').value = "";
+    myModalPhone.style.display = "none";
+  }
+});
 
 nmbr1.addEventListener("click", function(e) {
   arrayDate.push("1");
@@ -191,6 +215,9 @@ nmbr0.addEventListener("click", function(e) {
 removeBirthNumber.addEventListener("click", function(e) {
   arrayDate.splice(-1, 1);
   birthDate.innerHTML = arrayDate.join("");
+  if (arrayDate.length == 6) {
+    arrayDate.push(" - ");
+  }
   if (arrayDate.length > 10) {
     arrayDate = [];
   }
@@ -205,28 +232,6 @@ checkBirthNumber.addEventListener("click", function(e) {
     console.log(arrayDate.length);
   }
 })
-
-changeNumber.addEventListener('click', function(e) {
-  let newPhoneNumber = document.getElementById('newPhoneNumber').value;
-  let phoneNumber = document.getElementById('phoneNumber');
-  if (newPhoneNumber.match(/^[0-9]+$/) != null) {
-    phoneNumber.innerHTML = newPhoneNumber;
-  } else {
-    alert('det får bara innehålla nummer värden');
-  }
-  if (newPhoneNumber.length < 10 && newPhoneNumber.match(/^[0-9]+$/) != null) {
-    alert('vänligen skriv in ett 10 siffrigt telefonnummer');
-  }
-  if (newPhoneNumber.match(/^[0-9]+$/) != null && newPhoneNumber.length == 10) {
-    myModalPhone.style.display = "none";
-  }
-});
-
-let firstValue = 1;
-let firstPrice = 599;
-let secondValue = 1;
-let secondPrice = 139;
-let deliverPrice = 79;
 
 addFirstItem.addEventListener('click', function(e) {
   firstValue++;

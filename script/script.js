@@ -4,6 +4,7 @@ let changeNumber = document.getElementById('changeNumber');
 
 let birthDate = document.getElementById("birthDate");
 let removeBirthNumber = document.getElementById('removeBirthNumber');
+let checkBirthNumber = document.getElementById('checkBirthNumber');
 let nmbr1 = document.getElementById('box1');
 let nmbr2 = document.getElementById('box2');
 let nmbr3 = document.getElementById('box3');
@@ -63,6 +64,7 @@ phoneIcon.addEventListener('click', function(e) {
 
 modalSpan.addEventListener('click', function(e) {
   myModalPhone.style.display = "none";
+  let newPhoneNumber = document.getElementById('newPhoneNumber').value = "";
 });
 
 let arrayDate = [];
@@ -195,10 +197,29 @@ removeBirthNumber.addEventListener("click", function(e) {
 
 });
 
+checkBirthNumber.addEventListener("click", function(e) {
+  if (arrayDate.length == 0) {
+    alert('Nu är din personnummer ifylld');
+  } else {
+    alert('Vänligen fyll i ditt personnummer');
+    console.log(arrayDate.length);
+  }
+})
+
 changeNumber.addEventListener('click', function(e) {
   let newPhoneNumber = document.getElementById('newPhoneNumber').value;
   let phoneNumber = document.getElementById('phoneNumber');
-  phoneNumber.innerHTML = newPhoneNumber;
+  if (newPhoneNumber.match(/^[0-9]+$/) != null) {
+    phoneNumber.innerHTML = newPhoneNumber;
+  } else {
+    alert('det får bara innehålla nummer värden');
+  }
+  if (newPhoneNumber.length < 10 && newPhoneNumber.match(/^[0-9]+$/) != null) {
+    alert('vänligen skriv in ett 10 siffrigt telefonnummer');
+  }
+  if (newPhoneNumber.match(/^[0-9]+$/) != null && newPhoneNumber.length == 10) {
+    myModalPhone.style.display = "none";
+  }
 });
 
 let firstValue = 1;

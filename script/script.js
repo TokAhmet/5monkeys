@@ -100,7 +100,7 @@ nmbr1.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -112,9 +112,8 @@ nmbr2.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
-
 });
 
 nmbr3.addEventListener("click", function(e) {
@@ -124,7 +123,7 @@ nmbr3.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -136,7 +135,7 @@ nmbr4.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -148,7 +147,7 @@ nmbr5.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -160,7 +159,7 @@ nmbr6.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -172,7 +171,7 @@ nmbr7.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -184,7 +183,7 @@ nmbr8.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -196,7 +195,7 @@ nmbr9.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 });
 
@@ -207,7 +206,7 @@ nmbr0.addEventListener("click", function(e) {
     arrayDate.push(" - ");
   }
   if (arrayDate.length > 10) {
-    arrayDate = [];
+    arrayDate.length = 10;
   }
 
 });
@@ -215,17 +214,13 @@ nmbr0.addEventListener("click", function(e) {
 removeBirthNumber.addEventListener("click", function(e) {
   arrayDate.splice(-1, 1);
   birthDate.innerHTML = arrayDate.join("");
-  if (arrayDate.length == 6) {
-    arrayDate.push(" - ");
+  if (arrayDate.length == 7) {
+    arrayDate.splice(-2, 1);
   }
-  if (arrayDate.length > 10) {
-    arrayDate = [];
-  }
-
 });
 
 checkBirthNumber.addEventListener("click", function(e) {
-  if (arrayDate.length == 0) {
+  if (arrayDate.length == 10) {
     alert('Nu är din personnummer ifylld');
   } else {
     alert('Vänligen fyll i ditt personnummer');

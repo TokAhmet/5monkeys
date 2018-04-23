@@ -79,12 +79,9 @@ modalSpan.addEventListener('click', function(e) {
 changeNumber.addEventListener('click', function(e) {
   let newPhoneNumber = document.getElementById('newPhoneNumber').value;
   let phoneNumber = document.getElementById('phoneNumber');
-  if (newPhoneNumber.match(/^[0-9]+$/) != null) {
+  if (newPhoneNumber.match(/^[0-9]+$/) != null && newPhoneNumber.length == 10) {
     phoneNumber.innerHTML = newPhoneNumber;
   } else {
-    alert('det får bara innehålla nummer värden');
-  }
-  if (newPhoneNumber.length < 10 && newPhoneNumber.match(/^[0-9]+$/) != null) {
     alert('vänligen skriv in ett 10 siffrigt telefonnummer');
   }
   if (newPhoneNumber.match(/^[0-9]+$/) != null && newPhoneNumber.length == 10) {

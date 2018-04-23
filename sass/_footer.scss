@@ -30,10 +30,15 @@
   width: 100%;
   bottom: 0;
   left: 0;
-  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(148, 67, 14);
+    cursor: pointer;
+  }
 }
 
 .footer-icon {
   font-size: 3rem;
   padding: 0.8rem;
+  cursor: pointer;
 }

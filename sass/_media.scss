@@ -68,14 +68,13 @@
 @media screen and (max-width: $laptop) {
   .side-text,
   .sidebar {
-    padding: 8px;
+    padding: 12px;
     font-size: 1rem;
   }
 
-  .mobile-numbers,
   .order-shop,
   .user-items {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: $desktop) {
